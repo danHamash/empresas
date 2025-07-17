@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empresa Multinacional - Landing Page</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="nav-container">
+        <div class="logo">Multinacional</div>
+        <nav>
+          <button class="hamburger" aria-label="Abrir menu">&#9776;</button>
+          <ul class="nav-links">
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <video class="bg-video" src="./assets/image/header-video.mp4" autoplay muted loop playsinline webkit-playsinline preload="auto"></video>
+        <div class="hero-content" data-aos="fade-up">
+          <h1>Conectando Negócios Globalmente</h1>
+          <p>Oferecemos soluções inovadoras para sua empresa prosperar em qualquer lugar do mundo.</p>
+          <a href="#contato" class="btn-primary">Fale Conosco</a>
+        </div>
+      </section>
+
+      <section id="servicos">
+        <h2 data-aos="fade-right">Nossos Serviços</h2>
+        <div class="features">
+          <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="feature-card-img">
+                <img src="./assets/image/consultoria.jpg" alt="">
+            </div>
+            <h3>Consultoria Estratégica</h3>
+            <p>Ajudamos a definir planos de ação para crescimento sustentável.</p>
+          </div>
+          <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="feature-card-img">
+                <img src="./assets/image/tecnologia.jpg" alt="">
+            </div>
+            <h3>Integração Tecnológica</h3>
+            <p>Implementamos soluções digitais que otimizam processos.</p>
+          </div>
+          <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="feature-card-img">
+                <img src="./assets/image/suporte.jpg" alt="">
+            </div>
+            <h3>Suporte 24/7</h3>
+            <p>Equipe disponível para atender demandas a qualquer hora.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre">
+        <div class="sobre-img"></div>
+        <div class="sobre-descrição">
+          <h2 data-aos="fade-left">Sobre Nós</h2>
+          <p data-aos="fade-left" data-aos-delay="150">Com mais de 20 anos de atuação global, somos referência em inovação e excelência. Nossa missão é levar resultados concretos e impactos positivos para empresas em diversos setores.</p>
+        </div>
+      </section>
+
+      <section id="contato">
+        <h2 data-aos="fade-up">Entre em Contato</h2>
+        <form action="#" method="POST" data-aos="fade-up" data-aos-delay="100" style="max-width: 600px; margin: 2rem auto; display: flex; flex-direction: column; gap: 1rem;">
+          <input type="text" name="nome" placeholder="Seu Nome" required style="padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px" />
+          <input type="email" name="email" placeholder="Seu Email" required style="padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px" />
+          <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required style="padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px"></textarea>
+          <button type="submit" class="btn-primary" style="text-align: center">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Empresa Multinacional. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+    <script src="./assets/script/main.js" defer></script>
+  </body>
+</html>
